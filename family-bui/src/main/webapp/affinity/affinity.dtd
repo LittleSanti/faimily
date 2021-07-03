@@ -1,0 +1,15 @@
+<!ELEMENT affinity (locale,availabe-locales,from,to,dictionary?,result?)>
+<!ELEMENT locale ANY>
+<!ELEMENT availabe-locales (availabe-locale*)>
+<!ELEMENT availabe-locale EMPTY>
+<!ATTLIST availabe-locale
+	key		CDATA #REQUIRED
+	names	CDATA #REQUIRED
+>
+<!ELEMENT from ANY>
+<!ELEMENT to ANY>
+<!ELEMENT result (kinship-degree,affinity-degree)>
+<!ELEMENT kinship-degree ANY>
+<!ELEMENT affinity-degree ANY>
+<!ELEMENT dictionary (term*)>
+<!ELEMENT term ANY>
